@@ -126,7 +126,7 @@ button:hover{
 .cancel-order:hover{
     color: var(--Dark-blue);
 }
-@media(max-width: 375px){
+@media(max-width: 750px){
     .card{
         height: 570px;
         width: 290px;
