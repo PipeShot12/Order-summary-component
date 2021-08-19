@@ -1,0 +1,146 @@
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    
+    --paragraph-size:16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Red Hat Display', sans-serif;
+}
+main{
+    background: url('./images/pattern-background-desktop.svg'),var(--Pale-blue);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 400px;
+    height: 620px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow:  0 1px 20px -4px rgba(0, 0, 0, 0.164) ;
+}
+
+.hero{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+h2{
+    text-align: center;
+    font-weight: 900;
+    color:var(--Dark-blue);
+    margin-top: 30px;
+
+}
+.paragraph{
+    text-align: center;
+    font-size: var(--paragraph-size);
+    color: var(--Desaturated-blue);
+    width: 80%;
+    margin: auto;
+    line-height: 1.7em;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.inner-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+.inner-card > div:last-child > p{
+    color: var(--Bright-blue);
+    text-decoration: underline;
+    font-weight: 700;
+    cursor: pointer;
+}
+.inner-card > div:last-child > p:hover{
+    color: #766CF1;
+    text-decoration: none;
+}
+.icon{
+    display: flex;
+    align-items: center;
+   
+}
+.icon > img{
+    margin-right: 10px;
+    width: 30%;
+}
+.icon > div > h4{
+    color:var(--Dark-blue);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.icon > div > p{
+    color: var(--Desaturated-blue);
+}
+
+button{
+    color: white;
+    background-color: var(--Bright-blue);
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    box-shadow:  0 3px 20px -6px var(--Bright-blue) ;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #766CF1;
+}
+.cancel-order{
+    text-align: center;
+    color: var(--Desaturated-blue);
+    font-weight: 900;
+    font-size: 14px;
+    margin-top: 30px;
+    font-family: 'Red Hat Display', sans-serif;
+    cursor: pointer;
+}
+.cancel-order:hover{
+    color: var(--Dark-blue);
+}
+@media(max-width: 375px){
+    .card{
+        height: 570px;
+        width: 290px;
+    }
+    .icon > div > h4{
+        font-size: 13px;
+    }
+    .icon > div > p{
+        font-size: 13px;
+    }
+    .inner-card > div:last-child > p{
+        font-size: 14px;
+    }
+    .paragraph{
+        font-size: 14px;
+    }
+}
